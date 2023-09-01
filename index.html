@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Activity</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div id="chat-container">
+            <img src="https://i.pinimg.com/originals/35/fa/46/35fa4610a5b7722caf90a45fcf9cfe36.gif" alt="baymax">
+        <script>
+            function chat() {
+                alert ("Welcome to BayMax's Restaurant");
+                // Ask the user for their name
+                var yourname = prompt("May I please have your name?");
+                alert("Hello, " + yourname);
+    
+                var food = prompt("What is your order?");
+                alert("I like " + food + " too!");
+    
+                var shareFood = confirm("Your order is in on the way!");
+    
+                if (shareFood == true) {
+                    alert("Thank you for your purchase!");
+                } else {
+                    alert("Order has been cancelled!");
+                }
+            }
+            window.onload = chat
+        </script> 
+    </div>
+</body>
+</html>
